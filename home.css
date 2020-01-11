@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #EEE2DC;
+  font-family: Fascinate-Inline;
+}
+
+ul{
+  position: absolute;
+  top: 0;
+  display: flex;
+  margin: 0;
+  padding: 40px 0;
+  background: #EDC7b7;
+  width: 100%;
+}
+.home{
+ margin-left: 800px;
+}
+
+ul li
+{
+  list-style: none;
+  text-align: center;
+  display: block;
+
+}
+ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 0;
+  padding-left: 40px;
+}
+ul li a .icon{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: #AC3B61;
+
+}
+ul li a:hover .icon .fa{
+  transform: translateY(-100%);
+}
+.name{
+  color: #AC3B61;
+}

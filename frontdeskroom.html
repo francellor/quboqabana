@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qubo Qabana Resort</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="fdroom.css">
+    <script type="text/javascript" src="fdroom.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--Navigation bar-->
+      <nav>
+        <ul>
+          <li class="home">
+          <a href="file:///C:/Users/Elsa%20M.%20Arabiran/www/home.html">
+            <div class="icon">
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="HOME">HOME</div>
+          </a>
+          </li>
+          <li>
+          <a href="file:///C:/Users/Elsa%20M.%20Arabiran/www/gallery.html#gallery">
+            <div class="icon">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="GALLERY">GALLERY</div>
+          </a>
+          </li>
+          <li>
+          <a href="#rooms">
+            <div class="icon">
+              <i class="fa fa-bed" aria-hidden="true"></i>
+              <i class="fa fa-bed" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="ROOMS">ROOMS</div>
+          </a>
+          </li>
+          <li>
+          <a href="#food">
+            <div class="icon">
+              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <i class="fa fa-cutlery" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="BN">FOOD</div>
+          </a>
+          </li>
+          <li>
+          <a href="#about_us">
+            <div class="icon">
+              <i class="fa fa-info" aria-hidden="true"></i>
+              <i class="fa fa-info" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="AU">ABOUT<br> US</div>
+          </a>
+          </li>
+          <li>
+          <a href="#contact_us">
+            <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="CU">CONTACT<br> US</div>
+          </a>
+          </li>
+          <li>
+          <a href="#book_now">
+            <div class="icon">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+            </div>
+            <div class="name" data-text="BN">BOOK<br> NOW</div>
+          </a>
+          </li>
+        </ul>
+      </nav>
+  </div>
+  <!--end of Navigation Bar-->
+  <div class="room_selector">
+    <br>
+       Select room . . .
+  </div>
+  <!--Room Selection-->
+  <div class="room_container" id="roomcontainer">
+    <div class="deluxe" id="t1" onclick="selectroom()">
+          <div class="t1">
+            DELUXE
+          </div>
+    </div>
+    <div class="standard" id="t2" onclick="selectroom">
+        <div class="t2">
+            STANDARD
+        </div>
+    </div>
+    <div class="super_deluxe" id="t3" onclick="selectroom">
+        <div class="t3">
+            SUPER DELUXE
+        </div>
+    </div>
+    <div class="family" id="t4" onclick="selectroom">
+        <div class="t4">
+            FAMILY
+        </div>
+    </div>
+
+  </div>
+  <!--deluxerooms container-->
+  <div class="deluxerooms" id="drooms">
+    <span class="x" id="x" onclick="x()">&times;</span> <!--close container-->
+    <div class="dr" id="dr1" onclick="accept()">ROOM 1<!--first room-->
+      <div class="customer_input">
+        <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+          <br>
+          Reservation ID: <input type="number" name="checkin" min="0" max="12">
+          <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px;">Check In</button>
+          <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+        </form>
+    </div>
+    </div>
+    <div class="dr" id="dr2" >ROOM 2
+      <div class="customer_input">
+        <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+          <br>
+          Reservation ID: <input type="number" name="checkin" min="0" max="12">
+          <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px;">Check In</button>
+          <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+        </form>
+    </div>
+    </div>
+    <div class="dr" id="dr3">ROOM 3
+      <div class="customer_input">
+          <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+            <br>
+            Reservation ID: <input type="number" name="checkin" min="0" max="12">
+            <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+            <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+          </form>
+      </div>
+    </div>
+    <div class="dr" id="dr4">ROOM 4
+      <div class="customer_input">
+        <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+          <br>
+          Reservation ID: <input type="number" name="checkin" min="0" max="12">
+          <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+          <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+        </form>
+    </div>
+    </div>
+    <div class="dr" id="dr5">ROOM 5
+      <div class="customer_input">
+        <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+          <br>
+          Reservation ID: <input type="number" name="checkin" min="0" max="12">
+          <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+          <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+        </form>
+    </div>
+    </div>
+    <div class="dr" id="dr6">ROOM 6
+      <div class="customer_input">
+        <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+          <br>
+          Reservation ID: <input type="number" name="checkin" min="0" max="12">
+          <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+          <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+        </form>
+    </div>
+    </div>
+      <div class="dr" id="dr7">ROOM 7
+        <div class="customer_input">
+          <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+            <br>
+            Reservation ID: <input type="number" name="checkin" min="0" max="12">
+            <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+            <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+          </form>
+      </div>
+      </div>
+      <div class="dr" id="dr8">ROOM 8
+        <div class="customer_input">
+          <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+            <br>
+            Reservation ID: <input type="number" name="checkin" min="0" max="12">
+            <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+            <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+          </form>
+      </div>
+      </div>
+      <div class="dr" id="dr9" onclick="myFunction()">ROOM 9
+        <div class="customer_input">
+          <form action="frontdeskroom.php" method="post" class="ref_id"  id="access">
+            <br>
+            Reservation ID: <input type="number" name="checkin" min="0" max="12">
+            <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Check In</button>
+            <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+          </form>
+      </div>
+      </div>
+      <div class="confimation_container">
+        <div class="confirmation_id">
+          <br>
+          Reservation ID checking in....
+          <br>
+          <button type="submit" class="confirmation" style="background: #74f23a;font-size:14px; ">Confirm</button>
+          <button type="cancel" class="cancel" style="background: #ed0202;">Cancel</button>
+        </div>
+      </div>
+  </div>
+  </body>
+</html>

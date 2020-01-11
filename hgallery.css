@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+
+div.hg{
+  color: #123C69;
+  position: relative;
+  top: 220px;
+  left: 80px;
+  font-size: 60px;
+  font-family: Fascinate-Inline;
+  margin-bottom: 220px;
+}
+div.gallery {
+  margin: 50px;
+  border: 5px solid #EEE2DC;
+  float: left;
+  width: 360px;
+  margin-top: 30px;
+  margin-left: 10px;
+  position: relative;
+}
+div.gallery:hover {
+  border: 5px solid #65CCB8;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}

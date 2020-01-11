@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #EEE2DC;
+  font-family: Fascinate-Inline;
+}
+
+ul{
+  position: absolute;
+  top: 0;
+  display: flex;
+  margin: 0;
+  padding: 40px 0;
+  background: #EDC7b7;
+  width: 100%;
+}
+  .home{
+   margin-left: 800px;
+  }
+
+ul li
+{
+  list-style: none;
+  text-align: center;
+  display: block;
+}
+ul li a{
+  margin: 0;
+  text-decoration: none;
+  display: block;
+  padding: 0;
+  padding-left: 40px;
+}
+ul li a .icon{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: 0.5s;
+  color: #AC3B61;
+}
+ul li a:hover .icon .fa{
+  transform: translateY(-100%);
+}
+.name{
+  color: #AC3B61;
+}
+.container{
+  margin: 0 auto;
+  margin-top: 200px;
+  position: relative;
+  width: 60%;
+  height: 0;
+  padding-bottom: 25%;
+  border: solid 10px #AC3B61;
+
+}
+.slide_image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide_image img{
+  width: 100%;
+  height: 100%;
+}
+#i1, #i2, #i3, #i4, #i5{
+  display: none;
+}
+.pre, .next{
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(88,88,88,.4);
+  z-index: 99;
+  cursor: pointer;
+}
+.pre{
+  left: 0;
+}
+.next{
+  right: 0;
+}
+.nav{
+  width: 100%;
+  height: 11px;
+  bottom: 12%;
+  position: absolute;
+  text-align: center;
+  z-index: 99;
+}
+.dots{
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(0, 0, 0, .6);
+}
+.slide_image{
+  z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five{
+  z-index: 9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5{
+  background: #EEE2DC;
+}
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 360px;
+  position: relative;
+  margin-left: 40px;
+  border: 5px solid #EEE2DC;
+}
+
+div.gallery:hover {
+  border: 5px solid #65CCB8;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(#65CCB8, #57BA98, #3B945E);
+  top: 100px;
+  left: 120px;
+  color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+}
